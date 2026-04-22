@@ -1,0 +1,42 @@
+name: KodexLink
+packages:
+  GoogleMobileAds:
+    url: https://github.com/googleads/swift-package-manager-google-mobile-ads
+    from: "11.0.0"
+options:
+  developmentLanguage: en
+  deploymentTarget:
+    iOS: "17.0"
+configs:
+  Debug: debug
+  Release: release
+targets:
+  KodexLink:
+    type: application
+    platform: iOS
+    attributes:
+      SystemCapabilities:
+        com.apple.InAppPurchase:
+          enabled: 1
+    sources:
+      - path: KodexLink
+    dependencies:
+      - package: GoogleMobileAds
+        product: GoogleMobileAds
+    configFiles:
+      Debug: Config/App.xcconfig
+      Release: Config/App.xcconfig
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.kodexlink
+        INFOPLIST_FILE: KodexLink/Resources/Info.plist
+        SWIFT_VERSION: 5.0
+        TARGETED_DEVICE_FAMILY: "1,2"
+        SUPPORTS_MACCATALYST: NO
+        DEVELOPMENT_TEAM: ""
+        CODE_SIGN_STYLE: Automatic
+        PRODUCT_NAME: KodexLink
+        ASSETCATALOG_COMPILER_APPICON_NAME: "AppIcon"
+    scheme:
+      gatherCoverageData: false
+      storeKitConfiguration: KodexLink/Resources/KodexLinkIAP.storekit

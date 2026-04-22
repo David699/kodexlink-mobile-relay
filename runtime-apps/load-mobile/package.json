@@ -1,0 +1,19 @@
+{
+  "name": "@kodexlink/load-mobile",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "scripts": {
+    "build": "tsc -b tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "clean": "rm -rf dist",
+    "run": "pnpm build && node dist/main.js"
+  },
+  "dependencies": {
+    "@kodexlink/protocol": "workspace:*",
+    "@kodexlink/shared": "workspace:*",
+    "ws": "^8.18.3"
+  }
+}

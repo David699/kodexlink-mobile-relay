@@ -1,0 +1,8 @@
+MARKETING_VERSION = 0.1.5
+CURRENT_PROJECT_VERSION = 5
+INFOPLIST_KEY_CFBundleDisplayName = KodexLink
+INFOPLIST_KEY_LSApplicationCategoryType = public.app-category.developer-tools
+RELAY_REMOTE_CONFIG_URL =
+//OTHER_SWIFT_FLAGS = $(inherited) -D ENABLE_DEV_TOOLS
+
+#include? "Secrets.xcconfig"

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">KodexLink</string>
+
+    <!-- 通用操作 -->
+    <string name="action_ok">好</string>
+    <string name="action_cancel">取消</string>
+    <string name="action_back">返回</string>
+    <string name="action_refresh">刷新</string>
+    <string name="action_save">保存</string>
+
+    <!-- 底部 Tab -->
+    <string name="tab_conversations">对话</string>
+    <string name="tab_pair">配对</string>
+    <string name="tab_settings">设置</string>
+
+    <!-- 连接状态栏 -->
+    <string name="status_needs_repairing">需要重新配对</string>
+    <string name="status_recovering_session">正在恢复会话</string>
+    <string name="status_relay_disconnected">中继已断开</string>
+    <string name="status_connecting">正在连接\u2026</string>
+    <string name="status_relay_connected">已连接中继</string>
+    <string name="status_desktop_online">电脑在线</string>
+    <string name="status_desktop_offline">电脑离线</string>
+    <string name="status_runtime_missing">未找到 Codex 运行时</string>
+    <string name="status_runtime_error">电脑运行时异常</string>
+    <string name="status_request_error">电脑请求异常</string>
+    <string name="status_status_error">电脑状态异常</string>
+    <string name="status_connection_failed">连接失败</string>
+
+    <!-- 接管横幅 -->
+    <string name="takeover_failed_title">接管失败</string>
+    <string name="takeover_in_progress">接管中\u2026</string>
+    <string name="takeover_action">接管</string>
+    <string name="takeover_failed_message">无法获取当前电脑控制权</string>
+    <string name="takeover_acquiring">正在获取当前电脑控制权</string>
+    <string name="takeover_not_acquired">当前设备尚未取得该电脑控制权，请先接管控制权</string>
+
+    <!-- 引导页 -->
+    <string name="onboarding_wireless_title">无线连接</string>
+    <string name="onboarding_wireless_desc">通过安全中继服务器，随时随地连接你的电脑。</string>
+    <string name="onboarding_threads_title">Codex 线程</string>
+    <string name="onboarding_threads_desc">在手机上浏览并继续 AI 对话。</string>
+    <string name="onboarding_commands_title">命令执行</string>
+    <string name="onboarding_commands_desc">实时监控终端命令，随时审批或中断。</string>
+    <string name="onboarding_setup_title">第一步：配置电脑端</string>
+    <string name="onboarding_setup_step1">安装 Node.js 18+（nodejs.org）</string>
+    <string name="onboarding_setup_step2">安装 KodexLink</string>
+    <string name="onboarding_setup_step3">启动电脑端</string>
+    <string name="onboarding_setup_hint">电脑端启动后会在终端显示二维码，点「开始配对」扫码即可。</string>
+    <string name="onboarding_start_pairing">开始配对</string>
+    <string name="onboarding_subtitle_prefix">连接手机到你的电脑，继续 </string>
+    <string name="onboarding_subtitle_suffix"> 线程与命令执行。</string>
+
+    <!-- 扫码配对 -->
+    <string name="scanner_title">扫描配对</string>
+    <string name="scanner_subtitle">用相机扫描电脑端生成的二维码，或手动粘贴配对内容</string>
+    <string name="scanner_relay_locked">中继已锁定</string>
+    <string name="scanner_camera_permission_title">需要相机权限</string>
+    <string name="scanner_camera_permission_msg">授予权限后可直接扫码配对。也可展开下方「手动输入」直接粘贴。</string>
+    <string name="scanner_open_settings">打开系统设置授权</string>
+    <string name="scanner_pairing_failed">配对失败</string>
+    <string name="scanner_desktop_setup_title">电脑端设置</string>
+    <string name="scanner_desktop_setup_desc">在电脑上安装并启动 kodexlink 服务，然后扫描生成的二维码。</string>
+    <string name="scanner_setup_step1">确认已安装 Node.js (v18+)</string>
+    <string name="scanner_setup_step2">安装 kodexlink CLI</string>
+    <string name="scanner_setup_step3">启动服务并扫码</string>
+    <string name="scanner_manual_title">手动输入配对内容</string>
+    <string name="scanner_manual_desc">将电脑端配对页面的 JSON 内容粘贴到下方文本框。</string>
+    <string name="scanner_pairing">配对中\u2026</string>
+    <string name="scanner_pair_manual">使用手动内容配对</string>
+    <string name="scanner_camera_pairing">配对中，请稍候\u2026</string>
+    <string name="scanner_camera_scan">将二维码对准框内，自动识别</string>
+    <string name="scanner_collapse">收起</string>
+    <string name="scanner_expand">展开</string>
+    <string name="scanner_empty_content">内容不能为空</string>
+
+    <!-- 设置 -->
+    <string name="settings_title">设置</string>
+    <string name="settings_avatar_title">个人头像</string>
+    <string name="settings_avatar_change">点击更换头像</string>
+    <string name="settings_avatar_set">点击设置头像</string>
+    <string name="settings_section_general">通用</string>
+    <string name="settings_relay_server">Relay 服务器</string>
+    <string name="settings_device_management">设备管理</string>
+    <string name="settings_appearance">外观设置</string>
+    <string name="settings_notifications">通知设置</string>
+    <string name="settings_section_about">关于</string>
+    <string name="settings_privacy_policy">隐私政策</string>
+    <string name="settings_terms">服务条款</string>
+    <string name="settings_version">版本</string>
+    <string name="settings_sign_out">退出登录 / 解除配对</string>
+
+    <!-- 设备管理 -->
+    <string name="device_title">设备管理</string>
+    <string name="device_primary_section">主要设备</string>
+    <string name="device_secondary_section">其他绑定设备</string>
+    <string name="device_none">暂无其他已绑定设备</string>
+    <string name="device_primary_badge">主设备</string>
+
+    <!-- 通知设置 -->
+    <string name="notifications_title">通知设置</string>
+    <string name="notifications_header_title">通知管理</string>
+    <string name="notifications_header_subtitle">控制 Agent 事件的推送通知</string>
+    <string name="notifications_section">通知类型</string>
+    <string name="notifications_approval_title">审批请求通知</string>
+    <string name="notifications_approval_subtitle">当 Agent 请求审批时通知</string>
+    <string name="notifications_completion_title">任务完成通知</string>
+    <string name="notifications_completion_subtitle">当 Agent 完成任务时通知</string>
+    <string name="notifications_permission_note">通知功能需要系统权限，请确保在系统设置中允许此应用发送通知。</string>
+
+    <!-- Relay 设置 -->
+    <string name="relay_title">Relay 环境</string>
+    <string name="relay_mode_binding">跟随配对</string>
+    <string name="relay_mode_hosted">远端联调</string>
+    <string name="relay_mode_custom">自定义地址</string>
+    <string name="relay_binding_default_desc">跟随配对时使用的 Relay 地址</string>
+    <string name="relay_hosted_desc">使用官方托管的 Relay 服务</string>
+    <string name="relay_custom_desc">自定义私有 Relay 地址</string>
+    <string name="relay_env_reset">已切换环境，配对信息已清除</string>
+    <string name="relay_restored_default">已恢复默认</string>
+    <string name="relay_switched_remote">已切换至远端</string>
+    <string name="relay_custom_saved">自定义地址已保存</string>
+    <string name="relay_section_mode">连接模式</string>
+    <string name="relay_invalid_url">无效的地址格式</string>
+    <string name="relay_section_info">连接信息</string>
+    <string name="relay_current_address">当前 Relay 地址</string>
+    <string name="relay_awaiting_pair">等待配对</string>
+    <string name="relay_bound_desktop">已绑定电脑</string>
+
+    <!-- 会话列表 -->
+    <string name="threads_title">会话列表</string>
+    <string name="threads_archive_title">归档会话</string>
+    <string name="threads_archive_msg">归档后将从列表中移除，仍可通过历史记录找回。</string>
+    <string name="threads_archive">归档</string>
+    <string name="threads_archive_failed">归档失败</string>
+    <string name="threads_load_more">加载更多</string>
+    <string name="threads_creating">新建中\u2026</string>
+    <string name="threads_new">新建会话</string>
+    <string name="threads_empty_disconnected">中继已断开，请检查网络</string>
+    <string name="threads_empty_connecting">正在连接中继\u2026</string>
+    <string name="threads_empty_connection_failed">连接失败：%1$s</string>
+    <string name="threads_empty_desktop_offline">电脑已离线</string>
+    <string name="threads_empty_desktop_error">电脑状态异常，请检查</string>
+    <string name="threads_empty_syncing">正在同步\u2026</string>
+    <string name="threads_empty_no_sessions">暂无会话，点击新建</string>
+    <string name="date_yesterday">昨天</string>
+    <string name="date_format_month_day">M月d日</string>
+    <string name="date_format_full">yyyy年M月d日</string>
+
+    <!-- 外观设置 -->
+    <string name="appearance_title">外观设置</string>
+    <string name="appearance_style_codex">Codex 风格</string>
+    <string name="appearance_style_minimal">简约</string>
+    <string name="appearance_style_emoji">Emoji</string>
+    <string name="appearance_desc_codex">深色品牌风，专业沉稳</string>
+    <string name="appearance_desc_minimal">极简白，清爽干净</string>
+    <string name="appearance_desc_emoji">活泼表情，轻松有趣</string>
+    <string name="appearance_section_style">AI 头像风格</string>
+    <string name="appearance_section_preview">预览效果</string>
+    <string name="appearance_ai_name">AI 助手</string>
+    <string name="appearance_preview_ai_msg">你好！有什么我能帮你的？</string>
+    <string name="appearance_preview_user_msg">帮我写一个排序算法</string>
+    <string name="appearance_preview_ai_reply">好的，这是一个快速排序实现\u2026</string>
+    <string name="appearance_current_style">当前：%1$s</string>
+    <string name="appearance_user_label">我</string>
+
+    <!-- 审批 -->
+    <string name="approval_decline">拒绝</string>
+    <string name="approval_accept">批准</string>
+    <string name="approval_cancel_turn">取消当前轮次</string>
+
+    <!-- 登录 -->
+    <string name="login_title">登录</string>
+    <string name="login_email">邮箱</string>
+    <string name="login_password">密码</string>
+    <string name="login_submit">登录</string>
+
+    <!-- 会话 -->
+    <string name="conversation_title">会话</string>
+    <string name="conversation_load_older">加载更早消息</string>
+    <string name="conversation_dir">目录：%1$s</string>
+    <string name="conversation_approve">批准</string>
+    <string name="conversation_decline">拒绝</string>
+    <string name="conversation_cancel">取消</string>
+    <string name="conversation_queued">排队中：%1$s</string>
+    <string name="conversation_remove_image">移除</string>
+    <string name="conversation_attach_image">附加图片</string>
+    <string name="conversation_placeholder_disabled">当前不可发送</string>
+    <string name="conversation_placeholder_active">发送排队消息\u2026</string>
+    <string name="conversation_placeholder_idle">输入消息\u2026</string>
+
+    <!-- 头像选取 / 裁剪 -->
+    <string name="avatar_picker_title">头像设置</string>
+    <string name="avatar_picker_select">选择照片</string>
+    <string name="avatar_picker_delete">删除头像</string>
+    <string name="avatar_user_image">用户头像</string>
+    <string name="avatar_crop_cancel">取消</string>
+    <string name="avatar_crop_title">移动和缩放</string>
+    <string name="avatar_crop_confirm">确认</string>
+    <string name="avatar_crop_hint">拖移和缩放以调整</string>
+    <string name="avatar_local_note">头像仅保存在本设备上</string>
+
+    <!-- RelayConnection：不可写入 / 横幅消息 -->
+    <string name="write_unavail_needs_repairing">需要重新配对</string>
+    <string name="write_unavail_needs_recovery">需要恢复会话</string>
+    <string name="write_unavail_acquiring_control">正在获取当前电脑控制权</string>
+    <string name="write_unavail_not_acquired">当前设备尚未取得该电脑控制权，请先接管控制权</string>
+    <string name="write_unavail_disconnected">中继已断开</string>
+    <string name="write_unavail_connecting">正在连接中继\u2026</string>
+    <string name="write_unavail_failed">连接失败：%1$s</string>
+    <string name="write_unavail_runtime_missing">未找到 Codex 运行时</string>
+    <string name="write_unavail_runtime_error">运行时不可用</string>
+    <string name="write_unavail_request_failures">电脑请求失败过多</string>
+    <string name="write_unavail_status_error">电脑状态异常</string>
+    <string name="write_unavail_syncing">正在同步电脑状态\u2026</string>
+</resources>

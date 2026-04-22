@@ -1,0 +1,86 @@
+{
+  "appPolicies" : {
+    "eula" : "",
+    "policies" : [
+      {
+        "locale" : "en_US",
+        "policyText" : "",
+        "policyURL" : ""
+      }
+    ]
+  },
+  "identifier" : "38CDDEF2",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "1.99",
+      "familyShareable" : false,
+      "internalID" : "6761055112",
+      "localizations" : [
+        {
+          "description" : "Support KodexLink with a coffee",
+          "displayName" : "Buy Me a Coffee",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.example.kodexlink.tip.small",
+      "referenceName" : "Buy Me a Coffee",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "4.99",
+      "familyShareable" : false,
+      "internalID" : "6761055302",
+      "localizations" : [
+        {
+          "description" : "Support KodexLink with a hamburger",
+          "displayName" : "Buy Me a Hamburger",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.example.kodexlink.tip.large",
+      "referenceName" : "Buy Me a Hamburger",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "99.99",
+      "familyShareable" : false,
+      "internalID" : "6761056420",
+      "localizations" : [
+        {
+          "description" : "Support KodexLink with a Lobster",
+          "displayName" : "Buy Me a Lobster",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.example.kodexlink.tip.lobster",
+      "referenceName" : "Buy Me a Lobster",
+      "type" : "Consumable"
+    }
+  ],
+  "settings" : {
+    "_askToBuyEnabled" : false,
+    "_billingGracePeriodEnabled" : false,
+    "_billingIssuesEnabled" : false,
+    "_developerTeamID" : "",
+    "_disableDialogs" : false,
+    "_failTransactionsEnabled" : false,
+    "_lastSynchronizedDate" : 796117640.07785106,
+    "_locale" : "en_US",
+    "_renewalBillingIssuesEnabled" : false,
+    "_storefront" : "USA",
+    "_storeKitErrors" : [
+
+    ],
+    "_timeRate" : 0
+  },
+  "subscriptionGroups" : [
+
+  ],
+  "version" : {
+    "major" : 4,
+    "minor" : 0
+  }
+}

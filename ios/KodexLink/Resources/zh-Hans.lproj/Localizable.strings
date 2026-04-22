@@ -1,0 +1,339 @@
+/* ──────────────────────────── Common ──────────────────────────── */
+"common.ok" = "知道了";
+"common.cancel" = "取消";
+
+/* ──────────────────────────── App Shell ──────────────────────────── */
+"app.tab.threads" = "线程";
+"app.tab.pairing" = "配对";
+"app.tab.settings" = "设置";
+"app.takeover.failed" = "接管控制失败";
+"app.takeover.failedMessage" = "接管控制失败。";
+"app.takeover.inProgress" = "接管中...";
+"app.takeover.action" = "接管控制";
+"app.status.rePairingRequired" = "请重新扫描绑定";
+"app.status.authRecovering" = "设备认证恢复中";
+"app.status.relayDisconnected" = "Relay 未连接";
+"app.status.relayConnecting" = "Relay 连接中";
+"app.status.relayConnected" = "Relay 已连接";
+"app.status.macOnline" = "电脑已在线";
+"app.status.macOffline" = "电脑未在线";
+"app.status.macRuntimeError" = "电脑运行时异常";
+"app.status.codexMissing" = "电脑未安装 Codex";
+"app.status.macRequestError" = "电脑请求异常";
+"app.status.macStatusError" = "电脑状态异常";
+"app.status.relayFailed" = "Relay 连接失败";
+
+/* ──────────────────────────── Thread List ──────────────────────────── */
+"threads.loading" = "正在加载线程...";
+"threads.archiving" = "归档中...";
+"threads.archive" = "归档";
+"threads.archiveThread" = "归档线程";
+"threads.archiveConfirm" = "归档后将从手机线程列表隐藏，当前手机端暂不提供恢复入口。";
+"threads.archiveFailed" = "归档失败";
+"threads.archiveFailedMessage" = "归档线程失败。";
+"threads.empty" = "暂无线程";
+"threads.creating" = "新建中...";
+"threads.newThread" = "新建线程";
+"threads.reload" = "重新加载";
+"threads.loadMore" = "加载更多历史";
+"threads.loadingMore" = "正在加载更多历史...";
+"threads.emptyState.relayDisconnected" = "Relay 尚未连接，恢复后点击\"重新加载\"即可。";
+"threads.emptyState.relayConnecting" = "Relay 正在重连，连上后点击\"重新加载\"即可。";
+"threads.emptyState.relayFailed" = "%@。恢复后点击\"重新加载\"即可。";
+"threads.emptyState.agentOffline" = "当前没有在线的 KodexLink 电脑端，恢复后点击\"重新加载\"即可。";
+"threads.emptyState.runtimeUnavailable" = "KodexLink 电脑端的运行时当前不可用，恢复后点击\"重新加载\"即可。";
+"threads.emptyState.requestFailures" = "KodexLink for Mac 最近连续请求失败，恢复后点击\"重新加载\"即可。";
+"threads.emptyState.degraded" = "KodexLink for Mac 当前状态异常，恢复后点击\"重新加载\"即可。";
+"threads.emptyState.noThreads" = "已连接到 KodexLink for Mac，但暂时还没有线程。";
+"threads.emptyState.syncing" = "正在等待 Relay 与 KodexLink for Mac 状态同步。";
+"threads.yesterday" = "昨天";
+
+/* ──────────────────────────── Conversation ──────────────────────────── */
+"conversation.loading" = "正在加载会话...";
+"conversation.loadOlder" = "加载更早的消息";
+"conversation.me" = "我";
+"conversation.generating" = "生成中";
+"conversation.status.starting" = "KodexLink 正在开始处理";
+"conversation.status.streaming" = "KodexLink 正在生成回复";
+"conversation.status.runningCommand" = "KodexLink 正在执行命令";
+"conversation.status.waitingApproval" = "KodexLink 等待你的审批";
+"conversation.status.interrupting" = "正在停止当前执行";
+"conversation.status.interrupted" = "已停止本次执行";
+"conversation.status.failed" = "本次执行失败";
+"conversation.commandOutput.noOutputRunning" = "命令已启动，暂未产生可显示输出。";
+"conversation.commandOutput.waitingApproval" = "命令执行已暂停，等待审批后继续。";
+"conversation.commandOutput.noOutputCompleted" = "本次命令未产生可显示输出。";
+"conversation.commandOutput.interrupted" = "命令执行已中断。";
+"conversation.commandOutput.failed" = "命令执行失败，未返回可显示输出。";
+"conversation.commandStatus.running" = "执行中";
+"conversation.commandStatus.waitingApproval" = "待审批";
+"conversation.commandStatus.completed" = "已完成";
+"conversation.commandStatus.interrupted" = "已中断";
+"conversation.commandStatus.failed" = "失败";
+"conversation.approval.command" = "命令";
+"conversation.approval.file" = "文件";
+"conversation.approval.reason" = "原因";
+"conversation.approval.commandLabel" = "命令";
+"conversation.approval.directory" = "目录";
+"conversation.approval.grantRoot" = "授权根目录";
+"conversation.approval.currentOutput" = "当前输出";
+"conversation.approval.approve" = "批准";
+"conversation.approval.declineAndContinue" = "拒绝并继续";
+"conversation.approval.cancelTurn" = "终止本轮";
+"conversation.approval.needApproveCommand" = "需要批准执行命令";
+"conversation.approval.needApproveFile" = "需要批准文件变更";
+"conversation.approval.fallbackSummary" = "KodexLink 请求继续执行下一步操作";
+"conversation.queued" = "待发送";
+"conversation.composer.queuedDraft" = "已有一条待发送…";
+"conversation.composer.processingImages" = "图片处理中，完成后可发送…";
+"conversation.composer.activeWithImages" = "当前执行中，图片将不会排队…";
+"conversation.composer.readyWithImages" = "可直接发送图片，或补充文字…";
+"conversation.composer.queueMessage" = "加入一条待发送…";
+"conversation.composer.continueThread" = "继续这个 thread…";
+"conversation.preview.continueThread" = "继续 KodexLink 线程";
+"conversation.sendFailed" = "会话发送失败";
+"conversation.requestFailed" = "请求失败：%@";
+"conversation.executionOutput" = "执行输出";
+"conversation.fileChangeOutput" = "文件变更输出";
+"conversation.waitingApproval" = "等待你的审批";
+"conversation.stoppingTurn" = "正在终止本轮";
+"conversation.approvalAccepted" = "审批已通过，继续执行";
+"conversation.approvalDeclined" = "已拒绝当前操作，KodexLink 正在尝试其它方案";
+"conversation.stopRequestSent" = "停止请求已发送";
+"conversation.executionStoppedDot" = "已停止本次执行。";
+"conversation.executionFailedDot" = "本次执行失败。";
+"conversation.calibratingState" = "正在校准会话状态…";
+"conversation.queueConflict" = "已有一条待发送";
+"conversation.imageProcessingWait" = "图片处理中，请稍后发送";
+"conversation.noQueueImagesActive" = "当前执行中，暂不支持附图排队发送";
+"conversation.maxImages" = "每条消息最多附 2 张图片";
+"conversation.noImages" = "没有可用的图片，请重试。";
+"conversation.sentImages" = "已发送 %d 张图片";
+"conversation.attachedImages" = "[附图 %d 张]";
+"conversation.silentCommand" = "KodexLink 正在执行命令 · 已 %@ 无新输出（累计 %@）";
+"conversation.silentProcessing" = "KodexLink 仍在处理中 · 已静默 %@（累计 %@）";
+"time.seconds" = "%d 秒";
+"time.minutes" = "%d 分钟";
+"time.minutesAndSeconds" = "%d 分 %d 秒";
+
+/* ──────────────────────────── Approval ──────────────────────────── */
+"approval.reject" = "拒绝";
+"approval.approve" = "批准";
+"approval.waitingTitle" = "等待审批";
+
+/* ──────────────────────────── Mac Setup Guide ──────────────────────────── */
+"macSetup.step1" = "安装 Node.js 18+（nodejs.org）";
+"macSetup.step2" = "安装 KodexLink";
+"macSetup.step3" = "启动 Mac 端";
+"scanner.macSetup.title" = "如何启动 Mac 端";
+"scanner.macSetup.hint" = "首次使用需在 Mac 上安装并启动 KodexLink for Mac。";
+"scanner.macSetup.footer" = "Mac 端启动后会在终端显示二维码，对准摄像头扫码即可完成配对。";
+
+/* ──────────────────────────── Scanner ──────────────────────────── */
+"scanner.title" = "扫码配对";
+"scanner.subtitle" = "默认直接扫描 KodexLink for Mac 的配对二维码并自动认领这台 Mac。相机不可用时，再切到手动输入。";
+"scanner.relayFixed.title" = "当前 Relay 环境已固定";
+"scanner.relayFixed.message" = "当前仅接受来自 %@ 的配对内容；如果要切回本地或其它环境，请先调整 Relay 服务器设置。";
+"scanner.pairingFailed" = "配对失败";
+"scanner.manualEntry.hint" = "如果当前设备没有相机，或扫码内容无法识别，可以粘贴 `kodexlink pair` 输出的完整配对内容。";
+"scanner.claiming" = "正在认领...";
+"scanner.useManualContent" = "使用手动内容认领";
+"scanner.manualEntry.title" = "手动输入配对内容";
+"scanner.claiming.title" = "正在认领 Mac";
+"scanner.aimQR" = "将二维码对准取景框";
+"scanner.claimSuccess" = "配对成功后会自动连接到 Relay。";
+"scanner.autoScan" = "扫描到有效配对内容后会自动完成认领，无需再手动点按钮。";
+"scanner.preparingCamera" = "正在准备相机";
+"scanner.preparingCamera.message" = "首次打开会请求相机权限，用于直接扫描配对二维码。";
+"scanner.cameraDenied" = "相机权限已关闭";
+"scanner.cameraDenied.message" = "请到系统设置里打开相机权限，才能直接扫码配对。你也可以先用下面的手动输入继续。";
+"scanner.cameraRestricted" = "当前设备限制使用相机";
+"scanner.cameraRestricted.message" = "系统当前不允许使用相机。你可以改用手动输入配对内容。";
+"scanner.cameraUnavailable" = "当前环境不支持扫码";
+"scanner.cameraUnavailable.message" = "模拟器或无摄像头设备上无法打开扫码预览。你可以改用手动输入配对内容。";
+"scanner.openSettings" = "打开 KodexLink 设置";
+"scanner.payloadEmpty" = "配对内容不能为空。";
+"scanner.claimingOverlay" = "正在认领…";
+"scanner.autoRecognize" = "对准二维码自动识别";
+"scanner.autoScanHint" = "支持直接扫描配对二维码，识别后会自动完成认领。";
+
+/* ──────────────────────────── Onboarding ──────────────────────────── */
+"onboarding.subtitle.prefix" = "连接 iPhone 到你的 Mac，继续 ";
+"onboarding.subtitle.suffix" = " 线程与命令执行。";
+"onboarding.feature1.title" = "无线连接";
+"onboarding.feature1.desc" = "通过安全中继服务器，随时随地连接你的 Mac。";
+"onboarding.feature2.title" = "Codex 线程";
+"onboarding.feature2.desc" = "在 iPhone 上浏览并继续 AI 对话。";
+"onboarding.feature3.title" = "命令执行";
+"onboarding.feature3.desc" = "实时监控终端命令，随时审批或中断。";
+"onboarding.startPairing" = "开始配对";
+"onboarding.macSetup.title" = "第一步：配置 Mac 端";
+"onboarding.macSetup.step1" = "安装 Node.js 18+（nodejs.org）";
+"onboarding.macSetup.step2" = "安装 KodexLink";
+"onboarding.macSetup.step3" = "启动 Mac 端";
+"onboarding.macSetup.footer" = "Mac 端启动后会在终端显示二维码，点「开始配对」扫码即可。";
+
+/* ──────────────────────────── Login ──────────────────────────── */
+"login.email" = "邮箱";
+"login.password" = "密码";
+"login.submit" = "登录";
+"login.title" = "登录";
+
+/* ──────────────────────────── Settings ──────────────────────────── */
+"settings.relayServer" = "Relay 服务器";
+"settings.deviceManagement" = "设备管理";
+"settings.notificationPrefs" = "通知偏好";
+"settings.appearance" = "外观";
+
+/* ──────────────────────────── Chat Appearance Settings ──────────────────────────── */
+"settings.appearance.title" = "聊天外观";
+"settings.appearance.myAvatarSection" = "我的头像";
+"settings.appearance.myAvatar" = "头像";
+"settings.appearance.myAvatarSet" = "已设置自定义头像";
+"settings.appearance.myAvatarDefault" = "使用默认图标";
+"settings.appearance.aiAvatarSection" = "AI 头像风格";
+"settings.appearance.aiAvatarFooter" = "选择在对话中展示的 AI 助手头像。";
+"settings.appearance.preview" = "预览";
+"settings.appearance.previewAssistant" = "你好！有什么我可以帮你的吗？";
+"settings.appearance.previewUser" = "帮我看看这段代码";
+
+/* ──────────────────────────── Avatar Styles ──────────────────────────── */
+"avatar.picker.title" = "我的头像";
+"avatar.picker.selectPhoto" = "从相册选择";
+"avatar.picker.remove" = "删除头像";
+"avatar.picker.footer" = "头像将显示在聊天对话的用户消息旁边。";
+"avatar.crop.title" = "移动和缩放";
+"avatar.crop.confirm" = "确认";
+"avatar.crop.cancel" = "取消";
+"avatar.crop.hint" = "双指缩放，拖拽移动";
+
+"avatar.style.codex" = "Codex（默认）";
+"avatar.style.chatgpt" = "ChatGPT";
+"avatar.style.claude" = "Claude 风格";
+"avatar.style.minimal" = "极简";
+"settings.title" = "设置";
+"settings.tip" = "请我喝杯咖啡 ☕️";
+"settings.about" = "关于";
+"settings.privacyPolicy" = "隐私政策";
+"settings.termsOfUse" = "服务条款";
+"settings.version" = "版本";
+"settings.myApp" = "我的其他 App ⭐️";
+
+/* ──────────────────────────── Tip / IAP ──────────────────────────── */
+"tip.title" = "支持 KodexLink";
+"tip.header.title" = "请我喝杯咖啡";
+"tip.header.subtitle" = "如果 KodexLink 帮到了你，一点小小的支持对我意义重大，也让开发得以继续。";
+"tip.footer" = "打赏不可退款。\n感谢你的支持 🙏";
+"tip.error" = "购买失败，请重试。";
+"tip.loadFailed" = "商品加载失败，请重试。";
+"tip.loadFailed.hint" = "应用现在会直接请求正式 App Store 商品；如果仍然失败，请检查 App Store Connect 配置，并在已登录沙盒账号的真机上测试。";
+"tip.unavailable" = "当前无法使用内购功能。";
+"tip.unavailable.hint" = "没有返回任何可售商品。模拟器可能不会返回正式 App Store 商品，请优先在真机上验证。";
+"tip.retry" = "重试";
+"tip.thanks.title" = "谢谢你！";
+"tip.thanks.message" = "你的支持对我来说意义非凡。\n这让 KodexLink 得以继续成长。💖";
+"tip.thanks.close" = "返回 KodexLink";
+
+/* ──────────────────────────── Relay Settings ──────────────────────────── */
+"relaySettings.saveCustom" = "保存自定义地址";
+"relaySettings.environment" = "Relay 环境";
+"relaySettings.switchHint" = "切换到不同 Relay 环境时，如果当前绑定来自其它 Relay，会自动清理旧绑定并要求重新配对。";
+"relaySettings.activeAddress" = "当前生效地址";
+"relaySettings.currentBinding" = "当前绑定";
+"relaySettings.title" = "Relay 服务器";
+"relaySettings.invalidCustom" = "自定义 Relay 地址无效，请输入完整的 HTTP 或 HTTPS 地址。";
+"relaySettings.switchedCleared" = "Relay 环境已切换，旧绑定与认证已清理，请重新配对。";
+"relaySettings.restoredDefault" = "已恢复为跟随配对内容的 Relay 环境。";
+"relaySettings.switchedRemote" = "已切换到远端联调 Relay。";
+"relaySettings.savedCustom" = "已保存自定义 Relay 地址。";
+"relaySettings.cardTitle" = "Relay 服务器";
+"relaySettings.configure" = "配置 Relay 服务器";
+
+/* ──────────────────────────── Device Management ──────────────────────────── */
+"deviceManagement.defaultMac" = "默认 Mac";
+"deviceManagement.boundDevices" = "已绑定设备";
+"deviceManagement.noOtherDevices" = "当前没有其它已绑定设备";
+"deviceManagement.title" = "设备管理";
+
+/* ──────────────────────────── Notification Preferences ──────────────────────────── */
+"notificationPrefs.approval" = "审批通知";
+"notificationPrefs.completion" = "完成通知";
+"notificationPrefs.title" = "通知偏好";
+
+/* ──────────────────────────── Relay Environment ──────────────────────────── */
+"relayEnv.bindingDefault" = "跟随配对内容";
+"relayEnv.hostedRemote" = "远端联调";
+"relayEnv.custom" = "自定义地址";
+"relayEnv.bindingDefault.desc" = "默认使用已配对 Mac 返回的 Relay 地址。";
+"relayEnv.hostedRemote.desc" = "连接默认远端 Relay（可通过 S3 配置更新）。";
+"relayEnv.custom.desc" = "手动填写一个 HTTP 或 HTTPS Relay 地址。";
+"relayEnv.awaitingPairing" = "等待配对后自动确定";
+"relayEnv.enterCustom" = "请先填写有效的自定义 Relay 地址";
+
+/* ──────────────────────────── Relay Connection ──────────────────────────── */
+"relay.acquiringControl" = "正在取得这台 Mac 的控制权，请稍候。";
+"relay.controlRevoked" = "该 Mac 已被另一台设备接管控制，点击上方\"接管控制\"可夺回。";
+"relay.disconnected" = "Relay 尚未连接，恢复后刷新即可继续。";
+"relay.connecting" = "Relay 正在连接中，恢复后刷新即可继续。";
+"relay.failedDetail" = "%@，恢复后刷新即可继续。";
+"relay.notControlled" = "当前尚未取得这台电脑的控制权，请稍候或点击上方\"接管控制\"。";
+"relay.macOnline" = "电脑已在线";
+"relay.macOffline" = "电脑当前未在线，恢复后刷新即可继续。";
+"relay.runtimeUnavailable" = "电脑运行时当前不可用，恢复后刷新即可继续。";
+"relay.codexMissing" = "电脑未安装 Codex，请先安装后再刷新。";
+"relay.requestFailures" = "电脑当前请求异常，恢复后刷新即可继续。";
+"relay.statusError" = "Mac 当前状态异常，恢复后刷新即可继续。";
+"relay.syncing" = "正在等待 Mac 状态同步，稍后刷新即可。";
+"relay.acquiringControlBanner" = "正在取得这台 Mac 的控制权…";
+"relay.controlRevokedBanner" = "该 Mac 已被另一台设备接管控制";
+"relay.heartbeatTimeout" = "心跳超时，连接已断开";
+"relay.reconnectDelay" = "%@；将在 %d 秒后重连";
+"relay.executionStopped" = "已停止本次执行";
+
+/* ──────────────────────────── Relay Connection Errors ──────────────────────────── */
+"relayError.notConnected" = "Relay 尚未连接";
+"relayError.notConfigured" = "当前还没有可用的设备身份";
+"relayError.bindingUnavailable" = "当前还没有可用的绑定关系";
+"relayError.connectionClosed" = "Relay 连接已关闭";
+"relayError.unexpectedResponse" = "收到未预期的响应类型：%@";
+"relayError.rePairingRequired" = "当前绑定已失效，请重新扫描绑定";
+"relayError.sessionRecovery" = "设备认证正在恢复，请稍后重试";
+
+/* ──────────────────────────── Local Network Permission ──────────────────────────── */
+"localNetwork.timeout" = "未能确认本地网络权限。请确认已连接 Wi‑Fi，并在系统设置中允许 KodexLink 访问本地网络后重试。";
+"localNetwork.checkFailed" = "无法确认本地网络权限，请检查 Wi‑Fi 连接后重试。";
+"localNetwork.publishFailed" = "本地网络服务发布失败（domain: %d, code: %d）";
+
+/* ──────────────────────────── Local Network Permission Gate ──────────────────────────── */
+"localNetworkGate.subtitle" = "开始配对前，需要先确认 iPhone 允许访问同一局域网中的 KodexLink for Mac。";
+"localNetworkGate.checking" = "正在检查本地网络权限";
+"localNetworkGate.denied" = "需要开启本地网络权限";
+"localNetworkGate.unavailable" = "无法确认本地网络权限";
+"localNetworkGate.preparing" = "正在准备 KodexLink";
+"localNetworkGate.checking.message" = "如果系统弹出了本地网络访问提示，请允许 KodexLink 访问同一局域网中的 Mac。";
+"localNetworkGate.denied.message" = "当前 iPhone 已拒绝 KodexLink 的本地网络访问，请到系统设置中打开权限后返回。";
+"localNetworkGate.checking.detail" = "正在检查当前环境是否允许连接同一局域网中的 KodexLink for Mac。";
+"localNetworkGate.waitingSystem" = "正在等待系统返回本地网络权限状态…";
+"localNetworkGate.recheckPermission" = "重新检查权限";
+"localNetworkGate.openSettings" = "打开 KodexLink 设置";
+"localNetworkGate.openSettingsHint" = "将直接打开 设置 > KodexLink";
+"localNetworkGate.howTo" = "如何处理";
+"localNetworkGate.instruction1" = "KodexLink 需要访问本地网络，才能发现并连接同一 Wi‑Fi 下的 Mac。";
+"localNetworkGate.instruction2" = "点\"打开 KodexLink 设置\"后，会直接进入 设置 > KodexLink，在其中打开\"本地网络\"权限。";
+"localNetworkGate.instruction3" = "返回 App 后点\"重新检查权限\"，通过后会自动进入主界面。";
+
+/* ──────────────────────────── Pairing Errors ──────────────────────────── */
+"pairingError.invalidResponse" = "服务器返回了无效响应";
+"pairingError.bindingUnavailable" = "配对成功，但没有可用绑定";
+"pairingError.localNetworkDenied" = "当前未允许 KodexLink 访问本地网络。请到系统设置中打开\"本地网络\"权限后返回重试。";
+"pairingError.relayMismatch" = "当前 Relay 环境要求使用 %@，但本次配对内容来自 %@。请切换 Relay 环境后重试。";
+
+/* ──────────────────────────── QR Scanner Errors ──────────────────────────── */
+"qrScannerError.unsupported" = "二维码内容不是可识别的配对 payload。";
+
+/* ──────────────────────────── Image Attachment Errors ──────────────────────────── */
+"imageError.decodeFailed" = "无法读取该图片，请更换一张后重试。";
+"imageError.tooLarge" = "图片处理后仍超过 %dKB，请换一张更小的图片。";
+
+/* ──────────────────────────── Auth Errors ──────────────────────────── */
+"authError.invalidResponse" = "认证服务返回了无效响应";

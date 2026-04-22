@@ -1,0 +1,36 @@
+{
+  "name": "kodexlink-workspace",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "pnpm@10.6.0",
+  "scripts": {
+    "build": "pnpm -r build",
+    "typecheck": "pnpm build && pnpm -r exec tsc -p tsconfig.json --noEmit",
+    "protocol:generate:swift": "node scripts/generate-swift-message-types.mjs",
+    "clean": "pnpm -r clean",
+    "dev:up": "bash scripts/dev-services.sh up",
+    "dev:down": "bash scripts/dev-services.sh down",
+    "dev:status": "bash scripts/dev-services.sh status",
+    "dev:logs": "bash scripts/dev-services.sh logs",
+    "load-mobile:run": "pnpm --filter @kodexlink/load-mobile run run",
+    "fake-agent:serve": "pnpm --filter @kodexlink/fake-agent serve",
+    "kodexlink:start": "pnpm --filter kodexlink run start",
+    "kodexlink:pair": "pnpm --filter kodexlink run pair",
+    "kodexlink:status": "pnpm --filter kodexlink run status",
+    "kodexlink:doctor": "pnpm --filter kodexlink run doctor",
+    "kodexlink:threads": "pnpm --filter kodexlink threads",
+    "kodexlink:serve": "pnpm --filter kodexlink serve",
+    "relay-server:migrate": "pnpm --filter @kodexlink/relay-server migrate",
+    "relay-server:start": "pnpm --filter @kodexlink/relay-server start",
+    "relay-server:threads": "pnpm --filter @kodexlink/relay-server threads",
+    "relay-server:resume": "pnpm --filter @kodexlink/relay-server resume",
+    "relay-server:chat": "pnpm --filter @kodexlink/relay-server chat"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/pg": "^8.18.0",
+    "@types/ws": "^8.18.1",
+    "pptxgenjs": "^4.0.1",
+    "typescript": "^5.9.3"
+  }
+}

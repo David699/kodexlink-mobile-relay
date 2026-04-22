@@ -1,0 +1,36 @@
+{
+  "name": "kodexlink",
+  "version": "0.1.8",
+  "private": true,
+  "type": "module",
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "bin": {
+    "kodexlink": "dist/main.js"
+  },
+  "scripts": {
+    "build": "pnpm run clean && tsc -b tsconfig.json && node scripts/copy-static-assets.mjs",
+    "build:publish": "pnpm run build && node scripts/build-publish-bundle.mjs && node scripts/write-release-package.mjs",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "clean": "rm -rf dist release tsconfig.tsbuildinfo",
+    "pack:dry-run": "pnpm run build:publish && npm pack --dry-run ./release",
+    "start": "pnpm build && node dist/main.js start",
+    "status": "pnpm build && node dist/main.js status",
+    "doctor": "pnpm build && node dist/main.js doctor",
+    "threads": "pnpm build && node dist/main.js threads",
+    "serve": "pnpm build && node dist/main.js serve",
+    "pair": "pnpm build && node dist/main.js pair"
+  },
+  "dependencies": {
+    "@kodexlink/protocol": "workspace:*",
+    "@kodexlink/schemas": "workspace:*",
+    "@kodexlink/shared": "workspace:*",
+    "node-notifier": "^10.0.1",
+    "qrcode": "^1.5.4",
+    "ws": "^8.18.3"
+  },
+  "devDependencies": {
+    "@types/qrcode": "^1.5.6",
+    "esbuild": "^0.25.12"
+  }
+}

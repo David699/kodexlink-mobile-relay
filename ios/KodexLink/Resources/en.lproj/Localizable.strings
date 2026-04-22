@@ -1,0 +1,339 @@
+/* ──────────────────────────── Common ──────────────────────────── */
+"common.ok" = "OK";
+"common.cancel" = "Cancel";
+
+/* ──────────────────────────── App Shell ──────────────────────────── */
+"app.tab.threads" = "Threads";
+"app.tab.pairing" = "Pairing";
+"app.tab.settings" = "Settings";
+"app.takeover.failed" = "Takeover Failed";
+"app.takeover.failedMessage" = "Failed to take over control.";
+"app.takeover.inProgress" = "Taking over...";
+"app.takeover.action" = "Take Over";
+"app.status.rePairingRequired" = "Scan to Re-pair";
+"app.status.authRecovering" = "Recovering Authentication";
+"app.status.relayDisconnected" = "Relay Disconnected";
+"app.status.relayConnecting" = "Relay Connecting";
+"app.status.relayConnected" = "Relay Connected";
+"app.status.macOnline" = "Computer Online";
+"app.status.macOffline" = "Computer Offline";
+"app.status.macRuntimeError" = "Computer Runtime Error";
+"app.status.codexMissing" = "Codex Not Installed on Computer";
+"app.status.macRequestError" = "Computer Request Error";
+"app.status.macStatusError" = "Computer Status Error";
+"app.status.relayFailed" = "Relay Connection Failed";
+
+/* ──────────────────────────── Thread List ──────────────────────────── */
+"threads.loading" = "Loading threads...";
+"threads.archiving" = "Archiving...";
+"threads.archive" = "Archive";
+"threads.archiveThread" = "Archive Thread";
+"threads.archiveConfirm" = "Archived threads will be hidden from the mobile list. Recovery is not yet available on mobile.";
+"threads.archiveFailed" = "Archive Failed";
+"threads.archiveFailedMessage" = "Failed to archive thread.";
+"threads.empty" = "No Threads";
+"threads.creating" = "Creating...";
+"threads.newThread" = "New Thread";
+"threads.reload" = "Reload";
+"threads.loadMore" = "Load More History";
+"threads.loadingMore" = "Loading more history...";
+"threads.emptyState.relayDisconnected" = "Relay is not connected. Tap \"Reload\" once restored.";
+"threads.emptyState.relayConnecting" = "Relay is reconnecting. Tap \"Reload\" once connected.";
+"threads.emptyState.relayFailed" = "%@. Tap \"Reload\" once restored.";
+"threads.emptyState.agentOffline" = "No KodexLink computer is online. Tap \"Reload\" once restored.";
+"threads.emptyState.runtimeUnavailable" = "The KodexLink computer runtime is currently unavailable. Tap \"Reload\" once restored.";
+"threads.emptyState.requestFailures" = "KodexLink for Mac has been experiencing request failures. Tap \"Reload\" once restored.";
+"threads.emptyState.degraded" = "KodexLink for Mac is in an abnormal state. Tap \"Reload\" once restored.";
+"threads.emptyState.noThreads" = "Connected to KodexLink for Mac, but no threads yet.";
+"threads.emptyState.syncing" = "Waiting for Relay and KodexLink for Mac to sync.";
+"threads.yesterday" = "Yesterday";
+
+/* ──────────────────────────── Conversation ──────────────────────────── */
+"conversation.loading" = "Loading conversation...";
+"conversation.loadOlder" = "Load earlier messages";
+"conversation.me" = "Me";
+"conversation.generating" = "Generating";
+"conversation.status.starting" = "KodexLink is starting";
+"conversation.status.streaming" = "KodexLink is generating a response";
+"conversation.status.runningCommand" = "KodexLink is executing a command";
+"conversation.status.waitingApproval" = "KodexLink is waiting for your approval";
+"conversation.status.interrupting" = "Stopping current execution";
+"conversation.status.interrupted" = "Execution stopped";
+"conversation.status.failed" = "Execution failed";
+"conversation.commandOutput.noOutputRunning" = "Command started, no output yet.";
+"conversation.commandOutput.waitingApproval" = "Command paused, awaiting approval to continue.";
+"conversation.commandOutput.noOutputCompleted" = "This command produced no visible output.";
+"conversation.commandOutput.interrupted" = "Command execution interrupted.";
+"conversation.commandOutput.failed" = "Command failed, no visible output returned.";
+"conversation.commandStatus.running" = "Running";
+"conversation.commandStatus.waitingApproval" = "Pending";
+"conversation.commandStatus.completed" = "Completed";
+"conversation.commandStatus.interrupted" = "Interrupted";
+"conversation.commandStatus.failed" = "Failed";
+"conversation.approval.command" = "Command";
+"conversation.approval.file" = "File";
+"conversation.approval.reason" = "Reason";
+"conversation.approval.commandLabel" = "Command";
+"conversation.approval.directory" = "Directory";
+"conversation.approval.grantRoot" = "Grant Root";
+"conversation.approval.currentOutput" = "Current Output";
+"conversation.approval.approve" = "Approve";
+"conversation.approval.declineAndContinue" = "Decline & Continue";
+"conversation.approval.cancelTurn" = "Stop Turn";
+"conversation.approval.needApproveCommand" = "Command execution requires approval";
+"conversation.approval.needApproveFile" = "File change requires approval";
+"conversation.approval.fallbackSummary" = "KodexLink requests to continue with the next operation";
+"conversation.queued" = "Queued";
+"conversation.composer.queuedDraft" = "A message is already queued…";
+"conversation.composer.processingImages" = "Processing images, send when ready…";
+"conversation.composer.activeWithImages" = "Execution in progress, images won't queue…";
+"conversation.composer.readyWithImages" = "Send images or add text…";
+"conversation.composer.queueMessage" = "Queue a message…";
+"conversation.composer.continueThread" = "Continue this thread…";
+"conversation.preview.continueThread" = "Continue KodexLink thread";
+"conversation.sendFailed" = "Failed to send";
+"conversation.requestFailed" = "Request failed: %@";
+"conversation.executionOutput" = "Execution Output";
+"conversation.fileChangeOutput" = "File Change Output";
+"conversation.waitingApproval" = "Awaiting your approval";
+"conversation.stoppingTurn" = "Stopping turn";
+"conversation.approvalAccepted" = "Approval accepted, continuing execution";
+"conversation.approvalDeclined" = "Declined operation, KodexLink is trying alternatives";
+"conversation.stopRequestSent" = "Stop request sent";
+"conversation.executionStoppedDot" = "Execution stopped.";
+"conversation.executionFailedDot" = "Execution failed.";
+"conversation.calibratingState" = "Calibrating conversation state…";
+"conversation.queueConflict" = "A draft is already queued";
+"conversation.imageProcessingWait" = "Processing images, please wait";
+"conversation.noQueueImagesActive" = "Cannot queue images during active execution";
+"conversation.maxImages" = "Maximum 2 images per message";
+"conversation.noImages" = "No usable images, please try again.";
+"conversation.sentImages" = "Sent %d image(s)";
+"conversation.attachedImages" = "[%d image(s) attached]";
+"conversation.silentCommand" = "KodexLink is executing a command · silent for %@ (total %@)";
+"conversation.silentProcessing" = "KodexLink is still processing · silent for %@ (total %@)";
+"time.seconds" = "%d sec";
+"time.minutes" = "%d min";
+"time.minutesAndSeconds" = "%d min %d sec";
+
+/* ──────────────────────────── Approval ──────────────────────────── */
+"approval.reject" = "Reject";
+"approval.approve" = "Approve";
+"approval.waitingTitle" = "Awaiting Approval";
+
+/* ──────────────────────────── Mac Setup Guide ──────────────────────────── */
+"macSetup.step1" = "Install Node.js 18+ (nodejs.org)";
+"macSetup.step2" = "Install KodexLink";
+"macSetup.step3" = "Start Mac Agent";
+"scanner.macSetup.title" = "How to Start Mac Agent";
+"scanner.macSetup.hint" = "First-time setup: install and start KodexLink for Mac on your Mac.";
+"scanner.macSetup.footer" = "After starting, aim your camera at the QR code in the terminal to pair.";
+
+/* ──────────────────────────── Scanner ──────────────────────────── */
+"scanner.title" = "Scan to Pair";
+"scanner.subtitle" = "Scan the pairing QR code from KodexLink for Mac to automatically claim this Mac. Switch to manual entry if the camera is unavailable.";
+"scanner.relayFixed.title" = "Relay Environment Fixed";
+"scanner.relayFixed.message" = "Only accepting pairing content from %@. To switch to local or another environment, adjust Relay server settings first.";
+"scanner.pairingFailed" = "Pairing Failed";
+"scanner.manualEntry.hint" = "If the camera is unavailable or the QR code can't be recognized, paste the full pairing content output from `kodexlink pair`.";
+"scanner.claiming" = "Claiming...";
+"scanner.useManualContent" = "Use manual content to claim";
+"scanner.manualEntry.title" = "Manual Pairing Entry";
+"scanner.claiming.title" = "Claiming Mac";
+"scanner.aimQR" = "Aim at the QR code";
+"scanner.claimSuccess" = "Will automatically connect to Relay after pairing.";
+"scanner.autoScan" = "Detected pairing content will be claimed automatically, no button press needed.";
+"scanner.preparingCamera" = "Preparing Camera";
+"scanner.preparingCamera.message" = "Camera permission will be requested on first open, used for scanning pairing QR codes.";
+"scanner.cameraDenied" = "Camera Permission Denied";
+"scanner.cameraDenied.message" = "Please enable camera permission in Settings to scan QR codes. You can also use manual entry below.";
+"scanner.cameraRestricted" = "Camera Restricted";
+"scanner.cameraRestricted.message" = "The system does not allow camera usage. You can use manual pairing entry instead.";
+"scanner.cameraUnavailable" = "QR Scanning Unavailable";
+"scanner.cameraUnavailable.message" = "Cannot open QR scanner on simulator or devices without a camera. You can use manual pairing entry instead.";
+"scanner.openSettings" = "Open KodexLink Settings";
+"scanner.payloadEmpty" = "Pairing content cannot be empty.";
+"scanner.claimingOverlay" = "Claiming…";
+"scanner.autoRecognize" = "Aim at QR code for auto-recognition";
+"scanner.autoScanHint" = "Supports scanning pairing QR codes directly; claiming starts automatically on recognition.";
+
+/* ──────────────────────────── Onboarding ──────────────────────────── */
+"onboarding.subtitle.prefix" = "Connect your iPhone to your Mac, and continue ";
+"onboarding.subtitle.suffix" = " threads and command execution.";
+"onboarding.feature1.title" = "Wireless Connection";
+"onboarding.feature1.desc" = "Connect from anywhere through a secure relay.";
+"onboarding.feature2.title" = "Codex Threads";
+"onboarding.feature2.desc" = "Browse and continue AI conversations from your iPhone.";
+"onboarding.feature3.title" = "Command Execution";
+"onboarding.feature3.desc" = "Monitor and approve terminal commands in real time.";
+"onboarding.startPairing" = "Start Pairing";
+"onboarding.macSetup.title" = "Step 1: Set Up Mac Agent";
+"onboarding.macSetup.step1" = "Install Node.js 18+ (nodejs.org)";
+"onboarding.macSetup.step2" = "Install KodexLink";
+"onboarding.macSetup.step3" = "Start Mac Agent";
+"onboarding.macSetup.footer" = "After starting, a QR code appears in the terminal. Tap \"Start Pairing\" to scan.";
+
+/* ──────────────────────────── Login ──────────────────────────── */
+"login.email" = "Email";
+"login.password" = "Password";
+"login.submit" = "Log In";
+"login.title" = "Log In";
+
+/* ──────────────────────────── Settings ──────────────────────────── */
+"settings.relayServer" = "Relay Server";
+"settings.deviceManagement" = "Device Management";
+"settings.notificationPrefs" = "Notification Preferences";
+"settings.appearance" = "Appearance";
+
+/* ──────────────────────────── Chat Appearance Settings ──────────────────────────── */
+"settings.appearance.title" = "Chat Appearance";
+"settings.appearance.myAvatarSection" = "My Avatar";
+"settings.appearance.myAvatar" = "Avatar";
+"settings.appearance.myAvatarSet" = "Custom avatar set";
+"settings.appearance.myAvatarDefault" = "Using default icon";
+"settings.appearance.aiAvatarSection" = "AI Avatar Style";
+"settings.appearance.aiAvatarFooter" = "Choose the avatar displayed for the AI assistant in conversations.";
+"settings.appearance.preview" = "Preview";
+"settings.appearance.previewAssistant" = "Hello! How can I help you?";
+"settings.appearance.previewUser" = "Can you review this code?";
+
+/* ──────────────────────────── Avatar Styles ──────────────────────────── */
+"avatar.picker.title" = "My Avatar";
+"avatar.picker.selectPhoto" = "Choose from Library";
+"avatar.picker.remove" = "Remove Avatar";
+"avatar.picker.footer" = "Your avatar appears next to your messages in conversations.";
+"avatar.crop.title" = "Move and Scale";
+"avatar.crop.confirm" = "Done";
+"avatar.crop.cancel" = "Cancel";
+"avatar.crop.hint" = "Pinch to zoom, drag to reposition";
+
+"avatar.style.codex" = "Codex (Default)";
+"avatar.style.chatgpt" = "ChatGPT";
+"avatar.style.claude" = "Claude Style";
+"avatar.style.minimal" = "Minimal";
+"settings.title" = "Settings";
+"settings.tip" = "Buy Me a Coffee ☕️";
+"settings.about" = "About";
+"settings.privacyPolicy" = "Privacy Policy";
+"settings.termsOfUse" = "Terms of Use";
+"settings.version" = "Version";
+"settings.myApp" = "My Other App ⭐️";
+
+/* ──────────────────────────── Tip / IAP ──────────────────────────── */
+"tip.title" = "Support KodexLink";
+"tip.header.title" = "Buy Me a Coffee";
+"tip.header.subtitle" = "If KodexLink saves you time, a small tip means a lot and keeps development going.";
+"tip.footer" = "Tips are non-refundable.\nThank you for your support 🙏";
+"tip.error" = "Purchase failed. Please try again.";
+"tip.loadFailed" = "Failed to load products. Please try again.";
+"tip.loadFailed.hint" = "The app now queries live App Store products directly. If loading still fails, verify App Store Connect configuration and test on a signed-in device.";
+"tip.unavailable" = "In-app purchases are not available right now.";
+"tip.unavailable.hint" = "No salable products were returned. The simulator may not expose live App Store products, so please verify on a real device.";
+"tip.retry" = "Retry";
+"tip.thanks.title" = "Thank You!";
+"tip.thanks.message" = "Your support means the world to me.\nIt keeps KodexLink alive and growing. 💖";
+"tip.thanks.close" = "Back to KodexLink";
+
+/* ──────────────────────────── Relay Settings ──────────────────────────── */
+"relaySettings.saveCustom" = "Save Custom Address";
+"relaySettings.environment" = "Relay Environment";
+"relaySettings.switchHint" = "When switching to a different Relay environment, existing bindings from another Relay will be cleared and re-pairing will be required.";
+"relaySettings.activeAddress" = "Active Address";
+"relaySettings.currentBinding" = "Current Binding";
+"relaySettings.title" = "Relay Server";
+"relaySettings.invalidCustom" = "Invalid custom Relay address. Please enter a complete HTTP or HTTPS address.";
+"relaySettings.switchedCleared" = "Relay environment switched. Previous bindings and credentials cleared. Please re-pair.";
+"relaySettings.restoredDefault" = "Restored to follow pairing content Relay environment.";
+"relaySettings.switchedRemote" = "Switched to remote debugging Relay.";
+"relaySettings.savedCustom" = "Custom Relay address saved.";
+"relaySettings.cardTitle" = "Relay Server";
+"relaySettings.configure" = "Configure Relay Server";
+
+/* ──────────────────────────── Device Management ──────────────────────────── */
+"deviceManagement.defaultMac" = "Default Mac";
+"deviceManagement.boundDevices" = "Bound Devices";
+"deviceManagement.noOtherDevices" = "No other bound devices";
+"deviceManagement.title" = "Device Management";
+
+/* ──────────────────────────── Notification Preferences ──────────────────────────── */
+"notificationPrefs.approval" = "Approval Notifications";
+"notificationPrefs.completion" = "Completion Notifications";
+"notificationPrefs.title" = "Notification Preferences";
+
+/* ──────────────────────────── Relay Environment ──────────────────────────── */
+"relayEnv.bindingDefault" = "Follow Pairing Content";
+"relayEnv.hostedRemote" = "Remote Debugging";
+"relayEnv.custom" = "Custom Address";
+"relayEnv.bindingDefault.desc" = "Use the Relay address returned by the paired Mac.";
+"relayEnv.hostedRemote.desc" = "Connect to the default hosted Relay (remote-configurable).";
+"relayEnv.custom.desc" = "Manually enter an HTTP or HTTPS Relay address.";
+"relayEnv.awaitingPairing" = "Will be determined after pairing";
+"relayEnv.enterCustom" = "Please enter a valid custom Relay address first";
+
+/* ──────────────────────────── Relay Connection ──────────────────────────── */
+"relay.acquiringControl" = "Acquiring control of this Mac, please wait.";
+"relay.controlRevoked" = "This Mac has been taken over by another device. Tap \"Take Over\" above to reclaim.";
+"relay.disconnected" = "Relay is not connected, refresh once restored.";
+"relay.connecting" = "Relay is connecting, refresh once restored.";
+"relay.failedDetail" = "%@, refresh once restored.";
+"relay.notControlled" = "You have not yet acquired control of this computer. Please wait or tap \"Take Over\" above.";
+"relay.macOnline" = "Computer Online";
+"relay.macOffline" = "This computer is currently offline. Refresh once restored.";
+"relay.runtimeUnavailable" = "This computer runtime is currently unavailable. Refresh once restored.";
+"relay.codexMissing" = "Codex is not installed on this computer. Install it, then refresh.";
+"relay.requestFailures" = "This computer is experiencing request errors. Refresh once restored.";
+"relay.statusError" = "Mac is in an abnormal state, refresh once restored.";
+"relay.syncing" = "Waiting for Mac status sync, refresh shortly.";
+"relay.acquiringControlBanner" = "Acquiring control of this Mac…";
+"relay.controlRevokedBanner" = "This Mac has been taken over by another device";
+"relay.heartbeatTimeout" = "Heartbeat timeout, connection lost";
+"relay.reconnectDelay" = "%@; reconnecting in %d sec";
+"relay.executionStopped" = "Execution stopped";
+
+/* ──────────────────────────── Relay Connection Errors ──────────────────────────── */
+"relayError.notConnected" = "Relay is not connected";
+"relayError.notConfigured" = "No device identity available";
+"relayError.bindingUnavailable" = "No binding available";
+"relayError.connectionClosed" = "Relay connection closed";
+"relayError.unexpectedResponse" = "Unexpected response type: %@";
+"relayError.rePairingRequired" = "Current binding is no longer valid. Please scan again to re-pair.";
+"relayError.sessionRecovery" = "Device authentication recovering, please retry later";
+
+/* ──────────────────────────── Local Network Permission ──────────────────────────── */
+"localNetwork.timeout" = "Unable to confirm local network permission. Please ensure Wi‑Fi is connected and allow KodexLink local network access in Settings, then retry.";
+"localNetwork.checkFailed" = "Unable to confirm local network permission. Please check Wi‑Fi connection and retry.";
+"localNetwork.publishFailed" = "Local network service publish failed (domain: %d, code: %d)";
+
+/* ──────────────────────────── Local Network Permission Gate ──────────────────────────── */
+"localNetworkGate.subtitle" = "Before pairing, confirm that iPhone allows access to KodexLink for Mac on the same local network.";
+"localNetworkGate.checking" = "Checking Local Network Permission";
+"localNetworkGate.denied" = "Local Network Permission Required";
+"localNetworkGate.unavailable" = "Cannot Confirm Local Network Permission";
+"localNetworkGate.preparing" = "Preparing KodexLink";
+"localNetworkGate.checking.message" = "If the system prompts for local network access, please allow KodexLink to access Macs on the same network.";
+"localNetworkGate.denied.message" = "iPhone has denied KodexLink local network access. Please enable the permission in Settings and return.";
+"localNetworkGate.checking.detail" = "Checking whether the current environment allows connecting to KodexLink for Mac on the same local network.";
+"localNetworkGate.waitingSystem" = "Waiting for the system to return local network permission status…";
+"localNetworkGate.recheckPermission" = "Recheck Permission";
+"localNetworkGate.openSettings" = "Open KodexLink Settings";
+"localNetworkGate.openSettingsHint" = "Opens Settings > KodexLink directly";
+"localNetworkGate.howTo" = "How to Fix";
+"localNetworkGate.instruction1" = "KodexLink needs local network access to discover and connect to Macs on the same Wi‑Fi.";
+"localNetworkGate.instruction2" = "Tap \"Open KodexLink Settings\" to go directly to Settings > KodexLink, then enable \"Local Network\" permission.";
+"localNetworkGate.instruction3" = "Return to the app and tap \"Recheck Permission\". Once passed, you'll automatically enter the main interface.";
+
+/* ──────────────────────────── Pairing Errors ──────────────────────────── */
+"pairingError.invalidResponse" = "Server returned an invalid response";
+"pairingError.bindingUnavailable" = "Pairing succeeded, but no binding available";
+"pairingError.localNetworkDenied" = "KodexLink is not allowed to access the local network. Please enable \"Local Network\" permission in Settings and retry.";
+"pairingError.relayMismatch" = "Current Relay environment requires %@, but pairing content is from %@. Please switch Relay environment and retry.";
+
+/* ──────────────────────────── QR Scanner Errors ──────────────────────────── */
+"qrScannerError.unsupported" = "QR code content is not a recognized pairing payload.";
+
+/* ──────────────────────────── Image Attachment Errors ──────────────────────────── */
+"imageError.decodeFailed" = "Unable to read this image. Please try a different one.";
+"imageError.tooLarge" = "Image still exceeds %dKB after processing. Please try a smaller image.";
+
+/* ──────────────────────────── Auth Errors ──────────────────────────── */
+"authError.invalidResponse" = "Auth service returned an invalid response";
