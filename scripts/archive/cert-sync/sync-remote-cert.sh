@@ -9,7 +9,7 @@ if [[ -f "${CONFIG_PATH}" ]]; then
   set +a
 fi
 
-SOURCE_HOST="${SOURCE_HOST:-my-muffin.top}"
+SOURCE_HOST="${SOURCE_HOST:-relay.example.com}"
 SOURCE_PORT="${SOURCE_PORT:-22}"
 SOURCE_USER="${SOURCE_USER:-root}"
 SOURCE_CERT_DIR="${SOURCE_CERT_DIR:-/root/testPemDir}"

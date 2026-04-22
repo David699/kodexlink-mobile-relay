@@ -38,6 +38,45 @@ KodexLink pairing requires the mobile companion app:
 - [iPhone app on the App Store](https://apps.apple.com/us/app/kodexlink-codex-mobile-chat/id6761055159?uo=4)
 - [Android app on Google Play](https://play.google.com/store/apps/details?id=com.kodexlink.android)
 
+## Self-Hosting Relay Server
+
+By default, KodexLink uses the built-in relay. If you prefer to host your own for full control over your message routing:
+
+### 1. Deploy the Server
+The recommended production target is an **Ubuntu server** with a public domain and SSL certificates.
+
+1. **Run the automated setup script** from the repository root:
+   ```bash
+   sudo bash scripts/setup-ubuntu-relay-host.sh \
+     --domain relay.your-domain.com \
+     --ssl-cert-path /path/to/fullchain.pem \
+     --ssl-key-path /path/to/privkey.pem
+   ```
+2. **Build and start the service**:
+   ```bash
+   pnpm install
+   pnpm build
+   pnpm relay-server:migrate
+   pnpm relay-server:start
+   ```
+For detailed requirements and manual installation steps, see the [Relay Deployment Guide](runtime-apps/relay-server/DEPLOYMENT.md).
+
+### 2. Connect Your Desktop Agent
+Once your relay is running, point your desktop agent to it. You only need to provide the relay URL once (via CLI or environment variable); the agent will persist the setting for future sessions.
+
+**Via CLI flag:**
+```bash
+kodexlink start --relay https://relay.your-domain.com
+```
+
+KODEXLINK_RELAY_URL=https://relay.your-domain.com kodexlink start
+```
+
+### 3. Mobile App Configuration
+The mobile apps are designed to be **zero-config**:
+- **Automatic (Recommended)**: When you scan the pairing QR code from your desktop agent, the app automatically detects and connects to your self-hosted relay. No manual configuration is required on the phone.
+- **Manual (Optional)**: If you need to enforce a specific relay, go to **Settings > Relay Environment** in the mobile app and enter your custom URL.
+
 ## How It Works
 
 ```mermaid
