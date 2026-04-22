@@ -1,16 +1,16 @@
 # KodexLink
 
-KodexLink lets you use your phone as a companion screen for Codex running on your Mac. It is built for people who want to keep local Codex sessions on the desktop, but still follow the conversation, continue a thread, and approve terminal actions from an iPhone or Android device.
+KodexLink lets you use your phone as a companion screen for Codex running on your desktop computer. It is built for people who want to keep local Codex sessions on the desktop, but still follow the conversation, continue a thread, and approve terminal actions from an iPhone or Android device.
 
 ## Why It Exists
 
-Codex workflows often live in a terminal on one machine. That works well when you are sitting at the Mac, but it is awkward when you want to step away, check a long-running task, reply to a thread, or approve a command without returning to the keyboard.
+Codex workflows often live in a terminal on one machine. That works well when you are sitting at the computer, but it is awkward when you want to step away, check a long-running task, reply to a thread, or approve a command without returning to the keyboard.
 
 KodexLink adds a mobile layer around that local workflow. The desktop agent stays close to the Codex runtime, the relay routes messages between devices, and the mobile app gives you a focused interface for chat, thread history, command progress, and approvals.
 
 ## What You Can Use It For
 
-- Continue Codex conversations from your phone while the actual runtime stays on your Mac.
+- Continue Codex conversations from your phone while the actual runtime stays on your desktop computer.
 - Watch command execution and task progress without keeping the terminal in front of you.
 - Approve or reject terminal actions from the mobile app.
 - Pair a phone with a desktop agent using a QR code from the local browser panel.
@@ -18,7 +18,7 @@ KodexLink adds a mobile layer around that local workflow. The desktop agent stay
 
 ## Basic Flow
 
-1. Start the desktop agent on your Mac.
+1. Start the desktop agent on your computer.
 
    ```bash
    pnpm install
