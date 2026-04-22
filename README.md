@@ -18,11 +18,11 @@ KodexLink adds a mobile layer around that local workflow. The desktop agent stay
 
 ## Basic Flow
 
-1. Start the desktop agent on your computer.
+1. Install the desktop CLI and start it:
 
    ```bash
-   pnpm install
-   pnpm kodexlink:start
+   npm install -g kodexlink
+   kodexlink start
    ```
 
 2. Open the Local Panel URL printed by the agent. The panel shows service status and a pairing QR code.
