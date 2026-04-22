@@ -1,8 +1,35 @@
 # KodexLink
 
-KodexLink is a mobile companion for local Codex workflows. It lets you pair an iPhone or Android app with a desktop agent, continue Codex threads from your phone, monitor command execution, and approve terminal actions while the actual Codex runtime stays on your Mac.
+KodexLink lets you use your phone as a companion screen for Codex running on your Mac. It is built for people who want to keep local Codex sessions on the desktop, but still follow the conversation, continue a thread, and approve terminal actions from an iPhone or Android device.
 
-The desktop agent starts a local browser panel for pairing and status, connects to the relay server for message routing, and bridges approved mobile actions back to the local Codex process.
+## Why It Exists
+
+Codex workflows often live in a terminal on one machine. That works well when you are sitting at the Mac, but it is awkward when you want to step away, check a long-running task, reply to a thread, or approve a command without returning to the keyboard.
+
+KodexLink adds a mobile layer around that local workflow. The desktop agent stays close to the Codex runtime, the relay routes messages between devices, and the mobile app gives you a focused interface for chat, thread history, command progress, and approvals.
+
+## What You Can Use It For
+
+- Continue Codex conversations from your phone while the actual runtime stays on your Mac.
+- Watch command execution and task progress without keeping the terminal in front of you.
+- Approve or reject terminal actions from the mobile app.
+- Pair a phone with a desktop agent using a QR code from the local browser panel.
+- Run with the default relay or host your own relay server from this repository.
+
+## Basic Flow
+
+1. Start the desktop agent on your Mac.
+
+   ```bash
+   pnpm install
+   pnpm kodexlink:start
+   ```
+
+2. Open the Local Panel URL printed by the agent. The panel shows service status and a pairing QR code.
+3. Install the iOS or Android app, then scan the pairing QR code.
+4. Use the mobile app to view Codex threads, send follow-up messages, monitor command output, and approve actions.
+
+The Local Panel is not the mobile client. It is a local browser page served by the desktop agent for setup, pairing, relay status, and service controls.
 
 ## Mobile App
 
