@@ -147,3 +147,6 @@ Inside `runtime-apps/`, each subdirectory is a runnable application with a focus
 - `relay-server`: the backend relay service
 - `fake-agent`: a simulated development agent
 - `load-mobile`: a relay load and regression client
+
+## License
+AGPL-3.0
