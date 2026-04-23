@@ -68,7 +68,8 @@ Once your relay is running, point your desktop agent to it. You only need to pro
 ```bash
 kodexlink start --relay https://relay.your-domain.com
 ```
-
+**Via environment variable:**
+```bash
 KODEXLINK_RELAY_URL=https://relay.your-domain.com kodexlink start
 ```
 
